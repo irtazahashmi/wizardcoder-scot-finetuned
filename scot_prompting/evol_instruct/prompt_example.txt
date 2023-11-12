@@ -1,0 +1,55 @@
+Create a nested loop to print every combination of numbers between 0-9, excluding any combination that contains the number 5. Additionally, exclude any combination that contains a repeating digit. Implement the solution without using any built-in functions or libraries to check for repeating digits.
+
+# The pseudo code of the above instruction:
+# Input: i: int, j: int
+# Output: ch: str
+for i in range(10):
+    for j in range(10):
+        if i != j and i != 5 and j != 5:
+            print "" + i + "" + j
+
+Print the square of a list of numbers in reverse order using a while loop instead of a for loop. Additionally, ask to only print the squares of odd numbers.
+
+# The pseudo code of the above instruction:
+# Input: numbers: list of integers
+# Output: None
+
+# Initialize the index to the last element of the list
+index = len(numbers) - 1
+
+# Start a while loop that continues until the index is greater than or equal to 0
+while index >= 0:
+    # Get the current number from the list
+    current_number = numbers[index]
+
+    # Check if the current number is odd
+    if current_number % 2 != 0:
+        # Calculate the square of the current number
+        square = current_number * current_number
+
+        # Print the square
+        print(square)
+
+    # Decrement the index to move to the previous number in the list
+    index -= 1
+
+Write a function to find the number of distinct states in a given matrix. Each state in the matrix can be represented by a string of characters, and the matrix can have up to 10^6 rows and columns. The time complexity of your solution should be O(N), where N is the total number of characters in the matrix.
+
+# The pseudo code of the above instruction:
+# Input: matrix - a 2D matrix represented as a list of lists
+# Output: count - the number of distinct states
+
+function countDistinctStates(matrix):
+    # Initialize a set to store distinct states
+    distinct_states = set()
+
+    # Iterate through each row in the matrix
+    for row in matrix:
+        # Convert the row into a string
+        state = "".join(row)
+
+        # Add the state to the set
+        distinct_states.add(state)
+
+    # Return the number of distinct states
+    return len(distinct_states)

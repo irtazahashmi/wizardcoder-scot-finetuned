@@ -1,0 +1,57 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+/**
+ * Write a c++ function to find the first repeated character in a given string.
+ */
+string firstRepeatedChar(string str) {
+}
+
+// The pseudo code of the above function:
+// Input: str: str
+// Output: ch: str
+// 1: for i in range(len(str)) do
+// 2:    if str[i] in str[i+1:] then
+// 3:        return str[i]
+// 4: return None
+
+#include <bits/stdc++.h>
+using namespace std;
+
+
+/**
+ * Write a function to check if the given integer is a prime number.
+ */
+bool primeNum(int num) {
+}
+
+// The pseudo code of the above function:
+// Input: num: int
+// Output: True or False
+// 1: if num < 2 then
+// 2:    return False
+// 3: for i <- 2 to sqrt(num) do
+// 4:    if num % i == 0 then
+// 5:        return False
+// 6: return True
+
+#include <bits/stdc++.h>
+using namespace std;
+
+
+/**
+ * Write a function to find the maximum of nth column from the given tuple list.
+ */
+int maxOfNth(vector<vector<int>> testList, int n) {
+}
+
+// The pseudo code of the above function:
+// Input: test_list: list of tuples, N: int
+// Output: max: int
+// 1: max <- -inf
+// 2: for each t in test_list do
+// 3:    if t[N] > max then
+// 4:        max <- t[N]
+// 5: return max
+

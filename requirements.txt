@@ -1,0 +1,4 @@
+-r evaluation/requirements.txt
+-r fine_tuning/requirements.txt
+
+black~=23.0
